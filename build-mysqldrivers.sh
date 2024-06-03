@@ -10,8 +10,6 @@
 # libmysqlclient
 # ninja
 
-# this section from:
-# https://github.com/bgallois/QMYSQL_driver_prebuilt/blob/qt6/build.sh
 # specify qt version as the 1st parameter
 if [ -z "$1" ]
 then
