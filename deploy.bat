@@ -15,7 +15,6 @@ mkdir %TMP_DIR%
 copy %2 %TMP_DIR%\.
 D:
 cd %TMP_DIR%
-dir %TMP_DIR%
 
 call C:\"Program Files"\"Microsoft Visual Studio"\2022\Community\VC\Auxiliary\Build\vcvarsall.bat amd64
 D:\Qt\%1\msvc2019_64\bin\windeployqt.exe %2
