@@ -1,6 +1,6 @@
 # https://github.com/masmx86
 # Created:       2024-06-01
-# Last Modified: 2024-06-04
+# Last Modified: 2024-06-06
 
 # Tested:        Windows 11 + MSVS2022 + Qt6.7.1
 
