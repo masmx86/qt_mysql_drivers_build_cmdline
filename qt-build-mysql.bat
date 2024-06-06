@@ -1,4 +1,4 @@
-# Author:        https://github.com/masmx86
+# https://github.com/masmx86
 # Created:       2024-06-01
 # Last Modified: 2024-06-04
 
