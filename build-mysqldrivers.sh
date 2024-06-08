@@ -17,13 +17,12 @@ then
 else
   echo "Building for Qt version $1 ..."
 
-  # this section from:
   # https://doc.qt.io/qt-6/sql-driver.html#building-the-drivers
   QT_DIR="/opt/Qt/$1"
   SQL_SRC_DIR="Src/qtbase/src/plugins/sqldrivers"
-  CUR_PWD=$PWD
   TMP_BUILD_DIR="build-sqldrivers"
 
+  # make a temp dir in the /home for compiling
   cd
   mkdir $TMP_BUILD_DIR
   cd $TMP_BUILD_DIR
@@ -32,10 +31,9 @@ else
   cmake --build .
   cmake --install .
 
+  # remove the temp dir & files
   cd
   echo "-- Cleaning up..."
   rm -r $TMP_BUILD_DIR
   echo "-- Done"
-  
-  cd $CUR_PWD
 fi
