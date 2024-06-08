@@ -1,19 +1,20 @@
-# https://github.com/masmx86
-# Created:       2024-06-01
-# Last Modified: 2024-06-06
-
-# Tested:        Windows 11 + MSVS2022 + Qt6.7.1
-
-# Change the <PATH> to your own
-# mysql header files path:
-#   -DMySQL_INCLUDE_DIR="D:\mysql_qt\include"
-# mysql lib file path:
-#   -DMySQL_LIBRARY="D:\mysql_qt\lib\libmysql.lib"
-#
-# CAUTION: DO NOT SPELL "MySQL_..." AS "MYSQL_..."
-#          Otherwise <PATH> will not be recognised
-
 @echo off
+
+REM https://github.com/masmx86
+REM Created:       2024-06-01
+REM Last Modified: 2024-06-06
+
+REM Tested:        Windows 11 + MSVS2022 + Qt6.7.1
+
+REM Change the <PATH> to your own
+REM mysql header files path:
+REM   -DMySQL_INCLUDE_DIR="D:\mysql_qt\include"
+REM mysql lib file path:
+REM   -DMySQL_LIBRARY="D:\mysql_qt\lib\libmysql.lib"
+
+REM CAUTION: DO NOT SPELL "MySQL_..." AS "MYSQL_..."
+REM          Otherwise <PATH> will not be recognised
+
 if "%1"=="" goto USAGE
 
 :BUILD
