@@ -14,3 +14,6 @@ build-mysqldrivers.bat <qt-ver#>
 [windows 11 deploy using \Qt\<qt-ver#>\msvc2019_64\bin\windeployqt.exe]
 
 deploy.bat <qt-ver#> <"program name".exe>
+
+download mysql c connector driver comunity version from 
+https://dev.mysql.com/downloads/mysql/

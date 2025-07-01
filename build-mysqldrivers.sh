@@ -18,8 +18,11 @@ else
   echo "Building for Qt version $1 ..."
 
   # https://doc.qt.io/qt-6/sql-driver.html#building-the-drivers
+  QT_VERSION=$1
   QT_DIR="/opt/Qt/$1"
   SQL_SRC_DIR="Src/qtbase/src/plugins/sqldrivers"
+  SQL_SRC_INCLUDE_DIR="/usr/include/mysql"
+  SQL_SRC_LIB_FILE="/usr/lib/libmysqlclient.so"
   TMP_BUILD_DIR="build-sqldrivers"
 
   # make a temp dir in the /home for compiling
